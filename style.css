@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --text: 'Inter';
+    --green: hsl(75, 94%, 57%);
+    --light-grey: hsl(0, 0%, 20%);
+    --medium-grey: hsl(0, 0%, 12%);
+    --dark-grey: hsl(0, 0%, 8%);
+}
+html{
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    line-height: 5px;
+}
+img{
+    width: 75px;
+    border-radius: 200px;
+    margin-top: 1rem;
+}
+.card{
+    background-color: var(--medium-grey);
+    min-width: 22rem;
+    min-height: 32rem;
+    /* max-width: 25rem;
+    max-height: 38rem; */
+    font-family: var(--text);
+    display: grid;
+    /* align-items: center; */
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#location{
+    color: var(--green);
+    font-weight: 600;
+}
+#description{
+    margin-top: 2rem;
+    font-weight: 400;
+}
+#buttons{
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-inline: -1rem;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: var(--light-grey);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 500ms;
+}
+button:hover{
+    background-color: var(--green);
+}
